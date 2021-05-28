@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/ColorPink">
+
+
+    <RelativeLayout
+        android:id="@+id/rec_cart"
+        android:background="@color/ColorLightPink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/coupon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/cart_item_name"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:background="#800f"
+            android:src="@mipmap/coupon"
+            android:theme="@style/AppTheme" />
+
+        <ImageView
+            android:background="@drawable/rounded_corners"
+            android:id="@+id/cart_item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/ic_camera_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cart_items_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cart_item_name"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cart_item_image"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="0dp"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toEndOf="@+id/cart_item_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_toRightOf="@+id/coupon"
+            android:id="@+id/freecou"
+            android:textSize="13dp"
+            android:textColor="#800F"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free 2 coupons" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/freecou"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:id="@+id/cart_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs.0.00" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/freecou"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/cart_item_total"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: Rs.0.00" />
+
+        <TextView
+            android:id="@+id/cart_item_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qty"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_below="@id/freecou"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/cart_item_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Item"
+            android:layout_below="@id/freecou"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="100dp"
+            android:drawableStart="@drawable/ic_baseline_delete_24"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="270dp"
+            android:textColor="@color/Red"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/cart_item_stock"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

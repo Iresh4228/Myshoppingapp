@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "254957277085",
+    "project_id": "lookgood-3fee3",
+    "storage_bucket": "lookgood-3fee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254957277085:android:be3521ce17bc21d0b82974",
+        "android_client_info": {
+          "package_name": "com.example.myshoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254957277085-6ap9u25t2r6sa6jkf2i8b4slvv49sfoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwDn3lMVADX8hNaYpJ618fTY-rQHoecuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254957277085-6ap9u25t2r6sa6jkf2i8b4slvv49sfoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
